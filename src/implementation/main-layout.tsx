@@ -1,5 +1,5 @@
 import Footer from "./footer";
-import GridContainer from "./grid-container";
+import GridContainer from "../components/grid-container";
 import Header from "./header";
 
 export default function MainLayout({

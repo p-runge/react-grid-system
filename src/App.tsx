@@ -1,5 +1,5 @@
-import MainLayout from "./components/main-layout";
-import SectionA from "./components/section-a";
+import MainLayout from "./implementation/main-layout";
+import SectionA from "./implementation/section-a";
 import { GridSystemProvider } from "./hooks/use-grid-system";
 
 function App() {
