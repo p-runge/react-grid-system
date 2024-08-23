@@ -1,11 +1,17 @@
 import MainLayout from "./components/main-layout";
 import SectionA from "./components/section-a";
+import { GridSystemProvider } from "./hooks/use-grid-system";
 
 function App() {
+  const is_narrow = false;
+  const columns = is_narrow ? 10 : 12;
+
   return (
-    <MainLayout>
-      <SectionA />
-    </MainLayout>
+    <GridSystemProvider value={{ columns }}>
+      <MainLayout>
+        <SectionA />
+      </MainLayout>
+    </GridSystemProvider>
   );
 }
 
