@@ -17,11 +17,11 @@ const InnerGridContainer = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       className={cn(
-        "grid col-span-3 md:col-span-6 grid-cols-3 md:grid-cols-6 lg:grid-cols-10 gap-4",
+        "grid col-span-3 md:col-span-6 grid-cols-3 md:grid-cols-6 gap-4",
         // span over all columns
-        columns === 12 && "lg:col-span-12",
+        columns === 12 && "lg:col-span-12 lg:grid-cols-12",
         // span over the middle 10 columns
-        columns === 10 && "lg:col-span-10 lg:col-start-3"
+        columns === 10 && "lg:col-span-10 lg:grid-cols-10 lg:col-start-3"
       )}
     >
       {children}
