@@ -8,9 +8,9 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="container mx-auto px-4 min-h-screen flex flex-col text-shadow-normal">
+    <div className="container mx-auto px-4 h-screen flex flex-col">
       <Header />
-      <main className="bg-gray-300 py-4 flex-grow">
+      <main className="bg-gray-300 py-4 flex-grow overflow-y-auto">
         <GridContainer>{children}</GridContainer>
       </main>
       <Footer />
