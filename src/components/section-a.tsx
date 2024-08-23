@@ -24,23 +24,23 @@ export default function SectionA() {
       >
         Always full width
       </div>
-      {/* <div
+      <div
         className={cn(
           "bg-gray-200 p-4",
-          columns === 12 && "col-span-4 md:col-span-4 lg:col-span-6",
-          columns === 8 && "col-span-4 md:col-span-4",
-          columns === 4 && "col-span-4"
+          columns === 12 && "col-span-3 md:col-span-6 lg:col-span-6",
+          columns === 10 && "col-span-3 md:col-span-6 lg:col-span-10"
         )}
       >
         Half width on desktop
-      </div> */}
+      </div>
+      <div className="col-span-full bg-gray-200 p-4">Fillter</div>
       {tiles.map((tile, index) => (
         <div
           key={index}
           className={cn(
             "bg-gray-200 p-4",
-            columns === 12 && "col-span-4",
-            columns === 10 && "col-span-6"
+            columns === 12 && "col-span-3 lg:span-6",
+            columns === 10 && "col-span-3 lg:span-5"
           )}
         >
           <h2>{tile.title}</h2>
