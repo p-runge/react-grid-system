@@ -3,7 +3,7 @@ import SectionA from "./implementation/section-a";
 import { GridSystemProvider } from "./hooks/use-grid-system";
 
 function App() {
-  const is_narrow = false;
+  const is_narrow = true;
   const columns = is_narrow ? 10 : 12;
 
   return (

@@ -28,19 +28,19 @@ export default function SectionA() {
         className={cn(
           "bg-gray-200 p-4",
           columns === 12 && "col-span-3 md:col-span-6 lg:col-span-6",
-          columns === 10 && "col-span-3 md:col-span-6 lg:col-span-10"
+          columns === 10 && "col-span-3 md:col-span-6 lg:col-span-5"
         )}
       >
         Half width on desktop
       </div>
-      <div className="col-span-full bg-gray-200 p-4">Fillter</div>
+      <div className="col-span-full bg-gray-200 p-4">Filter</div>
       {tiles.map((tile, index) => (
         <div
           key={index}
           className={cn(
             "bg-gray-200 p-4",
             columns === 12 && "col-span-3 lg:span-6",
-            columns === 10 && "col-span-3 lg:span-5"
+            columns === 10 && "col-span-2 lg:span-5"
           )}
         >
           <h2>{tile.title}</h2>

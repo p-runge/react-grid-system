@@ -21,7 +21,7 @@ const InnerGridContainer = ({ children }: { children: React.ReactNode }) => {
         // span over all columns
         columns === 12 && "lg:col-span-12 lg:grid-cols-12",
         // span over the middle 10 columns
-        columns === 10 && "lg:col-span-10 lg:grid-cols-10 lg:col-start-3"
+        columns === 10 && "lg:col-span-10 lg:grid-cols-10 lg:col-start-2"
       )}
     >
       {children}
